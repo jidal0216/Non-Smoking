@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#D3D3D3">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="게임으로 금연 욕구를 참아보세요!"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"/>
+
+            <android.widget.Button
+                android:id="@+id/egggame_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="하러가기"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#D3D3D3">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="니코틴 중독 자가 진단을 통해\n얼마나 니코틴에 의존 중인지\n확인하세요!"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"/>
+
+            <android.widget.Button
+                android:id="@+id/egggame_btn2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="하러가기"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#D3D3D3">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="간단한 폐활량 테스트를 통해 자신의 폐활량을 측정하세요!"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"/>
+
+            <android.widget.Button
+                android:id="@+id/egggame_btn3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="하러가기"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

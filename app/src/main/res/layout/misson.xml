@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            app:cardBackgroundColor="#e9e9e9"
+            app:cardElevation="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/icon_dark">
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="금연 시작"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="목표달성"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="#8BD11A"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            app:cardBackgroundColor="#e9e9e9"
+            app:cardElevation="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mission1_dark">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="금연 1시간차"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar1"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:scaleY="5"
+                            android:progress="1"
+                            android:max="3600000"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progressTint="#95F300"
+                            android:progressBackgroundTint="#E9D8D6D6"
+                            android:progressBackgroundTintMode="src_over"
+                            />
+
+                        <TextView
+                            android:id="@+id/progressBarText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="20sp"
+                            android:text="목표달성"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            app:cardBackgroundColor="#e9e9e9"
+            app:cardElevation="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mission2_dark">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="금연 3시간차"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:scaleY="5"
+                            android:progress="1"
+                            android:max="10800000"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progressTint="#95F300"
+                            android:progressBackgroundTint="#E9D8D6D6"
+                            android:progressBackgroundTintMode="src_over"
+                            />
+
+                        <TextView
+                            android:id="@+id/progressBarText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="20sp"
+                            android:text="목표달성"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            app:cardBackgroundColor="#e9e9e9"
+            app:cardElevation="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mission3_dark">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="금연 1일차"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:scaleY="5"
+                            android:progress="1"
+                            android:max="86400000"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progressTint="#95F300"
+                            android:progressBackgroundTint="#E9D8D6D6"
+                            android:progressBackgroundTintMode="src_over"
+                            />
+
+                        <TextView
+                            android:id="@+id/progressBarText3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="20sp"
+                            android:text="목표달성"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            app:cardBackgroundColor="#e9e9e9"
+            app:cardElevation="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mission4_dark">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="금연 3일차"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar4"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:scaleY="5"
+                            android:progress="1"
+                            android:max="259200000"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progressTint="#95F300"
+                            android:progressBackgroundTint="#E9D8D6D6"
+                            android:progressBackgroundTintMode="src_over"
+                            />
+
+                        <TextView
+                            android:id="@+id/progressBarText4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="20sp"
+                            android:text="목표달성"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            app:cardBackgroundColor="#e9e9e9"
+            app:cardElevation="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mission5_dark">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="금연 7일차"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar5"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:scaleY="5"
+                            android:progress="1"
+                            android:max="604800000"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progressTint="#95F300"
+                            android:progressBackgroundTint="#E9D8D6D6"
+                            android:progressBackgroundTintMode="src_over"
+                            />
+
+                        <TextView
+                            android:id="@+id/progressBarText5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="20sp"
+                            android:text="목표달성"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            app:cardBackgroundColor="#e9e9e9"
+            app:cardElevation="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mission6_dark">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="금연 14일차"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar6"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:scaleY="5"
+                            android:progress="1"
+                            android:max="1209600000"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progressTint="#95F300"
+                            android:progressBackgroundTint="#E9D8D6D6"
+                            android:progressBackgroundTintMode="src_over"
+                            />
+
+                        <TextView
+                            android:id="@+id/progressBarText6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="20sp"
+                            android:text="목표달성"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            app:cardBackgroundColor="#e9e9e9"
+            app:cardElevation="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mission7_dark">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="금연 21일차"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar7"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:scaleY="5"
+                            android:progress="1"
+                            android:max="1814400000"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progressTint="#95F300"
+                            android:progressBackgroundTint="#E9D8D6D6"
+                            android:progressBackgroundTintMode="src_over"
+                            />
+
+                        <TextView
+                            android:id="@+id/progressBarText7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="20sp"
+                            android:text="목표달성"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

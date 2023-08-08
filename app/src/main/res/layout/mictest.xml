@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB4B4"
+    tools:context=".MainActivity">
+
+
+    <!-- 폐활량 테스트 -->
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="61dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="36dp"
+        android:clipToOutline="true"
+        android:inputType="textNoSuggestions"
+        android:src="@drawable/activity_heart"
+        app:layout_constraintBottom_toTopOf="@+id/lungs"
+        app:layout_constraintEnd_toStartOf="@+id/some_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/lungs"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="56dp"
+        android:inputType="textNoSuggestions"
+        android:src="@drawable/lungs2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/some_id"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/some_id"
+        android:layout_width="235dp"
+        android:layout_height="73dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="23dp"
+        android:gravity="top"
+        android:inputType="textNoSuggestions"
+        android:src="@drawable/voicetest"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        app:layout_constraintBottom_toTopOf="@+id/lungs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="34dp"
+
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="240dp"
+        android:clipToOutline="true"
+        android:inputType="textNoSuggestions"
+        android:src="@drawable/activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sttStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lungs"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <android.widget.Button
+        android:id="@+id/sttStart"
+        android:layout_width="197dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="45dp"
+        android:background="#DC4B4B"
+        android:inputType="textNoSuggestions"
+        android:shape="rectangle"
+        android:text="게임 시작"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/sttResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/lungs"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="46dp"
+        android:inputType="textNoSuggestions"
+        android:src="@drawable/alert_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.176"
+        tools:ignore="MissingConstraints" />
+
+    <android.widget.Button
+        android:id="@+id/sttResult"
+        android:layout_width="197dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="132dp"
+        android:background="#DC4B4B"
+        android:inputType="textNoSuggestions"
+        android:shape="rectangle"
+        android:text="게임 방법"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="40dp"
+        android:inputType="textNoSuggestions"
+        android:src="@drawable/award_05"
+        app:layout_constraintEnd_toStartOf="@+id/sttResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        tools:ignore="MissingConstraints" />
+
+    <android.widget.Button
+        android:id="@+id/sttAward"
+        android:layout_width="197dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="28dp"
+        android:background="#DC4B4B"
+        android:inputType="textNoSuggestions"
+        android:shape="rectangle"
+        android:text="게임 순위"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+    <item
+        android:id="@+id/menu_item1"
+        android:title="기록"
+        android:icon="@drawable/calendar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_item2"
+        android:title="금연 팁"
+        android:icon="@drawable/home"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_item3"
+        android:title="유틸리티"
+        android:icon="@drawable/settings"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_item4"
+        android:title="미션"
+        android:icon="@drawable/trophy"
+        app:showAsAction="always"/>
+</menu>

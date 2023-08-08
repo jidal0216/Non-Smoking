@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f9fa"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="61dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:src="@drawable/alarm_clock"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:text="알람설정 화면입니다"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/daysTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <android.widget.RadioButton
+            android:id="@+id/interval2min"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:buttonTint="@android:color/black"
+            android:text="2분마다"
+            android:textStyle="bold" />
+
+
+        <android.widget.RadioButton
+            android:id="@+id/interval5min"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:buttonTint="@android:color/black"
+            android:text="5분마다"
+            android:textStyle="bold" />
+
+        <android.widget.RadioButton
+            android:id="@+id/interval15min"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:buttonTint="@android:color/black"
+            android:text="15분마다"
+            android:textStyle="bold" />
+
+        <android.widget.RadioButton
+            android:id="@+id/interval30min"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:buttonTint="@android:color/black"
+            android:text="30분마다"
+            android:textStyle="bold" />
+
+        <android.widget.RadioButton
+            android:id="@+id/interval1hour"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:buttonTint="@android:color/black"
+            android:text="1시간마다"
+            android:textStyle="bold" />
+
+        <android.widget.RadioButton
+            android:id="@+id/interval2hours"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:buttonTint="@android:color/black"
+            android:text="2시간마다"
+            android:textStyle="bold" />
+
+        <android.widget.RadioButton
+            android:id="@+id/interval12hours"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:buttonTint="@android:color/black"
+            android:text="12시간마다"
+            android:textStyle="bold" />
+
+        <android.widget.RadioButton
+            android:id="@+id/interval24hours"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:buttonTint="@android:color/black"
+            android:text="24시간마다"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <android.widget.Button
+        android:id="@+id/startButton"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:shape="rectangle"
+        android:text="알람 시작"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="49dp"
+        android:layout_height="54dp"
+        android:layout_above="@id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="-70dp"
+        android:layout_toLeftOf="@+id/startButton"
+        android:gravity="center"
+        android:src="@drawable/alarm_clock_plus"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <android.widget.Button
+        android:id="@+id/cancelButton"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="#000000"
+        android:shape="rectangle"
+        android:text="알람 해제"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_above="@id/cancelButton"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="-80dp"
+        android:layout_toLeftOf="@+id/cancelButton"
+        android:gravity="center"
+        android:src="@drawable/alarm_clock_off"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="담배가 끌릴 때마다 금연을 도와주는 기능입니다. \n원하시는 시간을 선택하면, 해당 시간마다 동기부여 알람이 울린답니다!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

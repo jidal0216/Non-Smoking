@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="top"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="#e9e9e9">
+
+                    <com.tomer.fadingtextview.FadingTextView
+                        android:id="@+id/fadingTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:texts="@array/examples"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:background="#e9e9e9"
+                        android:textStyle="bold"
+                        app:timeout="500" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_test"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:contentDescription="TODO"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/smokingeffect" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" /> <!-- 추가된 Space 요소 -->
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:contentDescription="TODO"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/alarm" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                app:cardElevation="0dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/nonsmokingtime"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            app:srcCompat="@drawable/nonsmoke" />
+
+                        <TextView
+                            android:id="@+id/textViewsmokingcessationperiod"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="금연 기간" />
+
+                        <TextView
+                            android:id="@+id/textViewsmokingcessationperiodDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="금연 기간" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:columnCount="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:id="@+id/grid1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="25dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            app:cardElevation="0dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/smokingtime"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    app:srcCompat="@drawable/smoketime" />
+
+                                <TextView
+                                    android:id="@+id/textViewDaysSmokeFree"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="총 흡연 기간" />
+
+                                <TextView
+                                    android:id="@+id/textViewDaysSmokeFreeDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="총 흡연 기간" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            app:cardElevation="0dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/cigarette"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    app:srcCompat="@drawable/home_smoke" />
+
+                                <TextView
+                                    android:id="@+id/textViewTotalCigarettesSmoked"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="총 흡연량" />
+
+                                <TextView
+                                    android:id="@+id/textViewTotalCigarettesSmokedDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="피운 담배 개수" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.gridlayout.widget.GridLayout>
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:id="@+id/grid2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="25dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            app:cardElevation="0dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/losslife"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    app:srcCompat="@drawable/death" />
+
+                                <TextView
+                                    android:id="@+id/textViewLifespanReduction"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="수명 손실" />
+
+                                <TextView
+                                    android:id="@+id/textViewLifespanReductionDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="줄어든 수명" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            app:cardElevation="0dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/getlife"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    app:srcCompat="@drawable/savelife" />
+
+                                <TextView
+                                    android:id="@+id/textViewLifespanIncrease"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="수명 증가" />
+
+                                <TextView
+                                    android:id="@+id/textViewLifespanIncreaseDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="예상 수명 증가" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </androidx.gridlayout.widget.GridLayout>
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:id="@+id/grid3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="25dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            app:cardElevation="0dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/trashmoney"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    app:srcCompat="@drawable/wastemoney" />
+
+                                <TextView
+                                    android:id="@+id/textViewSavings"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="쓴 금액" />
+
+                                <TextView
+                                    android:id="@+id/textViewSavingsDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="쓴 금액" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            app:cardElevation="0dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/moneysave"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    app:srcCompat="@drawable/savemoney" />
+
+                                <TextView
+                                    android:id="@+id/textViewSavingMoney"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="절약 금액"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="절약 금액" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/textViewSavingMoneyDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="지금까지 절약 금액"
+                            app:layout_column="2"
+                            app:layout_row="0" />
+
+                    </androidx.gridlayout.widget.GridLayout>
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:id="@+id/grid4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="35dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            app:cardElevation="0dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/timewaste"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    app:srcCompat="@drawable/wastetime" />
+
+                                <TextView
+                                    android:id="@+id/textViewTimeLoss"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="시간 손실" />
+
+                                <TextView
+                                    android:id="@+id/textViewTimeLossDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="흡연으로 인한 시간 손실" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            app:cardElevation="0dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/timesave"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    app:srcCompat="@drawable/savetime" />
+
+                                <TextView
+                                    android:id="@+id/textViewTimeGained"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="시간 이득" />
+
+                                <TextView
+                                    android:id="@+id/textViewTimeGainedDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="금연으로 얻은 시간" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </androidx.gridlayout.widget.GridLayout>
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:id="@+id/gridbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="30dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/onButtonEditProfile"
+                                    android:layout_width="150dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_rectangle"
+                                    android:onClick="onButtonEditProfileClicked"
+                                    android:text="흡연 정보 수정"
+                                    android:textColor="@color/black"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:focusable="true"
+                                    android:clickable="true"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <android.widget.Button
+                            android:id="@+id/buttonClearData"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_rectangle"
+                            android:onClick="onClearDataButtonClick"
+                            android:text="금연 실패"
+                            android:textColor="@color/black"
+                            app:layout_column="2"
+                            app:layout_row="0"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:clickable="true"/>
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
